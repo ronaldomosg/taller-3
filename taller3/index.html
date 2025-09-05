@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Gamer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="overlay">
+      <h1>Tienda Gamer VVC</h1>
+      <h2>Arma tu PC como un verdadero profesional</h2>
+    </div>
+  </header>
+
+  <!-- ===== NAV ===== -->
+  <nav>
+    <ul>
+      <li><a href="#presentacion">Presentación</a></li>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- ===== PRESENTACIÓN ===== -->
+    <section id="presentacion">
+      <h2>Bienvenido</h2>
+      <p>Descubre nuestras PCs gamer diseñadas para cada nivel: desde lo básico hasta lo más extremo.</p>
+      <div class="presentacion-wrap">
+        <img src="presentacion.png" alt="PC Gamer setup" class="presentacion-img">
+      </div>
+    </section>
+
+    <!-- ===== PRODUCTOS ===== -->
+    <section>
+      <h2>Nuestros Productos</h2>
+      <div id="productos">
+
+        <!-- Producto 1 -->
+        <div class="producto">
+          <img src="pc1.png" alt="PC MASTER RACE - Computador gamer de alto rendimiento">
+          <h3>PC MASTER RACE</h3>
+          <p class="precio">$2000 USD</p>
+          <p>Potencia extrema para jugar en 4K con componentes tope de gama.</p>
+          <div class="video-wrap">
+            <iframe src="https://www.youtube.com/embed/3eLaSE9GNTo" allowfullscreen></iframe>
+          </div>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="producto">
+          <img src="pc2.png" alt="PC GAMA MEDIA - Computador gamer equilibrado">
+          <h3>PC GAMA MEDIA</h3>
+          <p class="precio">$1200 USD</p>
+          <p>Equilibrio perfecto entre potencia y precio para 1080p y 1440p.</p>
+          <div class="video-wrap">
+            <iframe src="https://www.youtube.com/embed/1XIQBhmEeYk" allowfullscreen></iframe>
+          </div>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="producto">
+          <img src="pc3.png" alt="PC NORMAL - Computador gamer básico">
+          <h3>PC NORMAL</h3>
+          <p class="precio">$900 USD</p>
+          <p>La opción accesible para empezar en el mundo gamer sin gastar demasiado.</p>
+          <div class="video-wrap">
+            <iframe src="https://www.youtube.com/embed/p-tAQfmHxSI" allowfullscreen></iframe>
+          </div>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== ASIDE ===== -->
+    <aside>
+      <h2>Enlaces útiles</h2>
+      <ul>
+        <li><a href="#">Guía de compra</a></li>
+        <li><a href="#">Reseñas</a></li>
+        <li><a href="#">Soporte técnico</a></li>
+      </ul>
+    </aside>
+
+    <!-- ===== CONTACTO ===== -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+
+        <label for="email">Correo:</label>
+        <input type="email" id="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2024 Tienda Gamer VVC. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
