@@ -1,0 +1,202 @@
+/* -------------------------
+   ESTILOS PARA LOGIN
+-------------------------- */
+
+/* Fondo con la sudadera */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("sudadera.jpg") no-repeat center center / cover;
+  font-family: Arial, sans-serif;
+}
+
+/* Caja del login */
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  text-align: center;
+  width: 320px;
+}
+
+/* Logo arriba */
+.logo {
+  background: url("logoRG.jpg") no-repeat center center / contain;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 15px auto;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Botón */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #333;
+}
+
+/* -------------------------
+   ESTILOS PARA BIENVENIDA
+   (no afectan el login)
+-------------------------- */
+
+body.bienvenida {
+  margin: 0;
+  padding: 0;
+  padding-top: 80px; /* espacio para navbar fijo */
+  font-family: 'Arial', sans-serif;
+  background-image: url('fondobienvenida.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  position: fixed; /* Fija la barra en la parte superior */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 40px;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+}
+
+/* Contenedores para distribuir los elementos */
+.nav-left,
+.nav-center,
+.nav-right {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.nav-left {
+  justify-content: flex-start; /* alinea a la izquierda */
+  gap: 20px;
+}
+
+.nav-center {
+  justify-content: center; /* centra el título */
+}
+
+.nav-right {
+  justify-content: flex-end; /* alinea a la derecha */
+  gap: 20px;
+}
+
+.nav-left a,
+.nav-right a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.nav-center h1 {
+  font-size: 22px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.cart-icon {
+  font-size: 20px;
+}
+
+/* Botón fijo abajo y centrado */
+.footer-about {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 1001;
+}
+
+.btn-about {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-about:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Sección Sobre Nosotros */
+.sobre-nosotros {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 40px 20px;
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.sobre-nosotros h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.sobre-nosotros p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.sobre-nosotros {
+  background-image: url('sobrenosotros.jpg'); /* nombre de la imagen */
+  background-size: cover;       /* que cubra todo el fondo */
+  background-position: center;  /* centrada */
+  background-repeat: no-repeat; /* no repetir */
+  height: 100vh;                /* altura completa */
+  color: white;                 /* texto blanco */
+  font-family: 'Arial', sans-serif; /* o la fuente que uses */
+  margin: 0;
+  padding: 0;
+}
+
+.sobre-nosotros main div {
+  background: rgba(0, 0, 0, 0.7); /* fondo negro semitransparente para texto */
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: auto;
+  text-align: left;
+}

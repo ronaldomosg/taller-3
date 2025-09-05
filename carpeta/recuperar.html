@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recuperar Contraseña</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function enviarCorreo(event) {
+      event.preventDefault();
+      const correo = document.getElementById('correo').value;
+      if (correo) {
+        window.location.href = 'codigo.html';
+      } else {
+        alert('Por favor ingresa tu correo electrónico.');
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h2>Recuperar Contraseña</h2>
+    <p>Ingresa tu correo electrónico y te enviaremos un código de verificación.</p>
+    <form onsubmit="enviarCorreo(event)">
+      <input type="email" id="correo" placeholder="Correo electrónico" required>
+      <button type="submit">Enviar código</button>
+    </form>
+  </div>
+</body>
+</html>
